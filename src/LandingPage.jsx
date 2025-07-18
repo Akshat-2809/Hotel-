@@ -447,12 +447,15 @@ const HotelLandingPage = () => {
             ref={subtitleRef}
             className="mb-12 md:mb-16"
           >
-            <p className="text-lg sm:text-xl md:text-2xl lg:text-3xl text-gray-600 font-light leading-relaxed relative">
+            <div className="text-lg sm:text-xl md:text-2xl lg:text-3xl text-gray-600 font-light leading-relaxed relative">
+              <span className="relative z-10">Relax. Find inspiration. Be fascinated.</span>
+               <div className="absolute inset-0 bg-gradient-to-r from-sky-100 to-blue-100 opacity-0 hover:opacity-50 transition-opacity duration-300 rounded-lg"></div>
+            </div>
+            {/* <p className="text-lg sm:text-xl md:text-2xl lg:text-3xl text-gray-600 font-light leading-relaxed relative">
               <span className="relative z-10">Relax. Find inspiration. Be fascinated.</span>
               <div className="absolute inset-0 bg-gradient-to-r from-sky-100 to-blue-100 opacity-0 hover:opacity-50 transition-opacity duration-300 rounded-lg"></div>
-            </p>
+            </p> */}
           </div>
-
           {/* Button with Enhanced Animation */}
           <div 
             ref={buttonRef}
@@ -482,7 +485,7 @@ const HotelLandingPage = () => {
       </div>
 
       {/* Custom Styles */}
-      <style jsx>{`
+      <style>{`
         html {
           scroll-behavior: smooth;
         }
